@@ -42,7 +42,7 @@ function ProfileCard ({ profile }) {
         <Avatar
           className={classes.avatar}
           src={API_URL + profile.avatar.url}
-          alt={profile.profile_name}
+          alt={profile.name}
         />
       )}
       <Typography
