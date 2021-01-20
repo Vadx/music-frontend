@@ -1,0 +1,31 @@
+{
+  "name": "name",
+  "version": "1.0.0",
+  "scripts": {
+    // "dev": "node server.js",
+    // "build": "next build",
+    // "start": "NODE_ENV=production node server.js -p $PORT",
+    "start": "next start -p $PORT",
+    "develop": "next dev",
+    "build": "next build",
+    "heroku-postbuild": "next build"
+  },
+  "author": "Vadx",
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.11.2",
+    "@zeit/next-css": "^1.0.1",
+    "clsx": "^1.1.1",
+    "dotenv": "^8.2.0",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^10.0.5",
+    "next-images": "^1.4.0",
+    "next-seo": "^4.7.3",
+    "nextjs-progressbar": "^0.0.5",
+    "prop-type": "^0.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-markdown": "^4.3.1"
+  },
+  "license": "ISC"
+}
