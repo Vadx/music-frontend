@@ -45,6 +45,7 @@ function ProfileCard ({ profile }) {
           alt={profile.name}
         />
       )}
+      {console.log('Avatar URL:', profile.avatar.url)}
       <Typography
         component='h5'
         variant='h5'
