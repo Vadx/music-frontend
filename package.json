@@ -18,7 +18,7 @@
     "next": "^10.0.5",
     "next-images": "^1.4.0",
     "next-seo": "^4.7.3",
-    "nextjs-progressbar": "^0.0.5",
+    "nextjs-progressbar": "^0.0.7",
     "prop-type": "^0.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

@@ -7,7 +7,7 @@ import theme from '../src/theme'
 import Header from '../components/Header'
 import { DefaultSeo } from 'next-seo'
 import SEO from '../next-seo.config'
-// import NextNprogress from 'nextjs-progressbar'
+import NextNprogress from 'nextjs-progressbar'
 
 export default function MyApp (props) {
   const { Component, pageProps } = props
@@ -22,13 +22,12 @@ export default function MyApp (props) {
 
   return (
     <>
-      {/* <NextNprogress
+      <NextNprogress
         color='#29D'
         startPosition='0.3'
         stopDelayMs='400'
-        height='4'
-        showSpinner='false'
-      /> */}
+        height='5'
+      />
       <DefaultSeo {...SEO} />
       <Head>
         {/* PWA primary color */}
