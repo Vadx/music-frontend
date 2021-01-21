@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
   bgWrap: {
     position: 'relative',
     height: '100%',
-    width: '50vw',
+    width: 'calc(50vw - 16px)',
     marginTop: '-40px',
     zIndex: '-1',
     [theme.breakpoints.up('sm')]: {
@@ -27,13 +27,21 @@ const useStyles = makeStyles((theme) => ({
     position: 'relative',
     paddingTop: theme.spacing(7),
     [theme.breakpoints.down('sm')]: {
-      fontSize: 46,
-      textAlign: 'center'
+      fontSize: 42,
+      textAlign: 'center',
+      background: 'rgba(0, 0, 0, .6)',
+      color: '#fff',
+      paddingTop: 0,
+      textShadow: '2px 2px rgba(0, 0, 0, .5)'
     }
   },
   isMobileWrap: {
     maxHeight: 500,
-    position: 'relative'
+    position: 'relative',
+    marginTop: theme.spacing(-5),
+    marginLeft: 'calc(50% - 50vw)',
+    marginRight: 'calc(50% - 50vw)',
+    paddingTop: theme.spacing(7),
   }
 }))
 
@@ -63,8 +71,8 @@ const TopBanner = () => {
               <Image
                 layout='fill'
                 objectFit='cover'
-                quality={100}
-                src='/home-banner.jpg'
+                quality={50}
+                src='/home-banner.png'
                 alt='music'
               />
             </Box>
@@ -76,8 +84,9 @@ const TopBanner = () => {
         <Image
           layout='fill'
           objectFit='cover'
-          src='/home-banner.jpg'
+          src='/home-banner.png'
           alt='music'
+          quality={50}
         />
         <Box className={classes.mainTitle}>Music lesssons online for kids and adults</Box>
         <Box textAlign='center' pt={4} pb={3}>
