@@ -27,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
 function Profile ({profile}) {
   const classes = useStyles()
   const { API_URL } = process.env
+  const urlImage = process.env.NODE_ENV !== 'production' ? API_URL + profile.avatar.url : profile.avatar.url
 
   const SEO = {
     title: `Music School | ${profile.name}`,
@@ -75,7 +76,7 @@ function Profile ({profile}) {
               {profile.avatar && (
                 <Avatar
                   className={classes.avatar}
-                  src={API_URL + profile.avatar.url}
+                  src={urlImage}
                   alt={profile.profile_name}
                 />
               )}
