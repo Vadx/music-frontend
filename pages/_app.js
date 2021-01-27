@@ -1,4 +1,5 @@
 import React from 'react'
+import { Provider } from 'next-auth/client'
 import Head from 'next/head'
 import PropTypes from 'prop-types'
 import { ThemeProvider } from '@material-ui/core/styles'
@@ -7,7 +8,7 @@ import theme from '../src/theme'
 import Header from '../components/Header'
 import { DefaultSeo } from 'next-seo'
 import SEO from '../next-seo.config'
-import NextNprogress from 'nextjs-progressbar'
+// import NextNprogress from 'nextjs-progressbar'
 
 export default function MyApp (props) {
   const { Component, pageProps } = props
@@ -21,13 +22,13 @@ export default function MyApp (props) {
   }, [])
 
   return (
-    <>
-      <NextNprogress
+    <Provider session={pageProps.session}>
+      {/* <NextNprogress
         color='#29D'
         startPosition='0.3'
         stopDelayMs='400'
         height='5'
-      />
+      /> */}
       <DefaultSeo {...SEO} />
       <Head>
         {/* PWA primary color */}
@@ -43,7 +44,7 @@ export default function MyApp (props) {
         <Header />
         <Component {...pageProps} />
       </ThemeProvider>
-    </>
+    </Provider>
   )
 }
 
