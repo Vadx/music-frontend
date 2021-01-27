@@ -25,7 +25,7 @@ const options = {
 
       if (isSignIn) {
         const response = await fetch(
-          `${process.env.API_URL}/auth/${account.provider}/callback?access_token=${account?.accessToken}`
+          `${process.env.NEXT_PUBLIC_API_URL}/auth/${account.provider}/callback?access_token=${account?.accessToken}`
         );
 
         const data = await response.json();
