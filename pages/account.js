@@ -59,6 +59,18 @@ const AccountPage = ({ session }) => {
           {signInButtonNode()}
         </Box>
         <Box textAlign='center' pt={3} fontSize={18}>You aren't authorized to view this page</Box>
+
+        <Box>
+          <h3>API Example</h3>
+          <p>The examples below show responses from the example API endpoints.</p>
+          <p><em>You must be signed in to see responses.</em></p>
+          <h2>Session</h2>
+          <p>/api/examples/session</p>
+          <iframe src="/api/examples/session"/>
+          <h2>JSON Web Token</h2>
+          <p>/api/examples/jwt</p>
+          <iframe src="/api/examples/jwt"/>
+        </Box>
       </Box>
     )
   }
