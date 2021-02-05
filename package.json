@@ -5,11 +5,9 @@
     "node": "14.x"
   },
   "scripts": {
-    "prestart": "next build",
     "start": "next start -p $PORT",
     "develop": "next dev",
-    "build": "next build",
-    "heroku-postbuild": "next build"
+    "build": "next build"
   },
   "author": "Vadx",
   "dependencies": {
