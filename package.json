@@ -5,6 +5,7 @@
     "node": "14.x"
   },
   "scripts": {
+    "prestart": "next build",
     "start": "next start -p $PORT",
     "develop": "next dev",
     "build": "next build",
@@ -18,7 +19,7 @@
     "clsx": "^1.1.1",
     "dotenv": "^8.2.0",
     "isomorphic-unfetch": "^3.0.0",
-    "next": "^10.0.5",
+    "next": "^10.0.6",
     "next-auth": "^3.2.0",
     "next-images": "^1.4.0",
     "next-seo": "^4.7.3",
