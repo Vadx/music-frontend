@@ -16,6 +16,9 @@ const options = {
   session: {
     jwt: true,
   },
+  ssl: {
+    rejectUnauthorized: true
+  },
   debug: true,
   callbacks: {
     session: async (session, user) => {
