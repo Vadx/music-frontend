@@ -17,7 +17,7 @@ const options = {
     jwt: true,
   },
   ssl: {
-    rejectUnauthorized: true
+    rejectUnauthorized: false
   },
   tls: {
     rejectUnauthorized: false,
