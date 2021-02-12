@@ -19,6 +19,9 @@ const options = {
   ssl: {
     rejectUnauthorized: true
   },
+  tls: {
+    rejectUnauthorized: false,
+  },
   debug: true,
   callbacks: {
     session: async (session, user) => {
